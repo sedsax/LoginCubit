@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_cubit/login/view/login_view.dart';
+import 'package:login_cubit/example.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,10 +8,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Material App',
-      theme: ThemeData.dark(),
-      home: LoginView(),
+   //   theme: ThemeData.dark(),
+      home: MyHomePage(),
     );
   }
 }
